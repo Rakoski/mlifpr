@@ -9,7 +9,7 @@ def exerc5():
 def contaDicks(lista: list) -> dict:
     conta = {}
     for valor in lista:
-        if type(valor) == bool:
+        if valor == 'True':
             if valor == True:
                 if True in conta:
                     conta[True] += 1
