@@ -13,17 +13,9 @@ def data_set(aname):
 
     print("classes 1: ", classes)
 
-    df = data.drop(columns=ultima)
-
-    print("ultima: ", ultima)
-    print("df: ", df)
-
-    result['dados'] = df
     result['classes'] = classes
     result['cls-orig'] = cls_orig
     result['cls-cnt'] = cls_cnt
-
-    print("result: ", result)
 
     return result
 
@@ -41,6 +33,9 @@ if __name__ == '__main__':
         print(f'{key} : {value}')
 
     print('nome-arquivo: ', data['nome-arquivo'])
+    print(data['cls-orig'])
+    print(data['cls-cnt'])
+    print(data['classes'])
     ncls = len(data['cls-orig'])
     print(f'1 - possui {ncls} classes')
     print(f'2 - número de itens  para cada classe: ', data['cls-cnt'])
@@ -58,7 +53,7 @@ if __name__ == '__main__':
 # 0 - 10 -> 10/45 -> 2 MAX
 # 1 - 15 -> 15/45 -> 3 MAX
 # 2 - 20 -> 20/45 -> 4 MAX
-# =======> total -> 45 -> 3
+# =======> total -> 45 -> 4
 
 # Datasets para treinar ML
 # NUMERO INSTANCIAS -> NUMERO LINHAS
