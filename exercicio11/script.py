@@ -26,3 +26,12 @@ for key, value in data.items():
     print(f'{key} : {value}')
 
     ncls = len(data['cls-cnt'])
+    print("numero de classes: ", ncls)
+
+    soma = np.sum(data['cls-cnt'])
+    result = []
+    for vlr in data['cls-cnt']:
+        result.append(soma / vlr)
+
+    max = np.max(result)
+    print("valor máximo: ", max)
