@@ -12,3 +12,6 @@ data = {'Name': ['Alice', 'Bob', 'Charlie'],
         'City': ['New York', 'London', 'Paris']}
 df = pd.DataFrame(data)
 print(df)
+
+mascara = df.apply(lambda linha: linha.astype (str) .str.contains(r'\?')).any(axis=1)
+
