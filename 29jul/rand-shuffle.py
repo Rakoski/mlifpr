@@ -28,7 +28,10 @@ def test_shuffle():
     #print(ll)
 
     print("data: ", data)
-    print("data.iloc[ ll ]: ", data.iloc[ ll ])
+    print("data.iloc[ ll ]: ", data.iloc[ [2, 5, 10, -1] ]) # imprime a prox
+    # python tem index negativa
+    # por colunas
+    # por virgula
 
 test_shuffle()
 
