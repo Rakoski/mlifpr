@@ -1,0 +1,14 @@
+
+https://estatisticafacil.org/glossario/o-que-e-normalizacao-min-max/
+
+Exemplo Prático de Normalização Min-Max
+Para ilustrar a aplicação da normalização Min-Max, considere um conjunto de dados com as idades de um grupo de pessoas: 15, 20, 35, 40 e 50 anos. O valor mínimo é 15 e o máximo é 50. Aplicando a fórmula de normalização, a idade de 20 anos seria transformada em (20 - 15) / (50 - 15) = 0,111. Assim, todas as idades podem ser convertidas para um intervalo entre 0 e 1, facilitando a análise comparativa.
+
+normal = ( x - min ) / (max - x)
+
+Exercício:
+-- fazer a operação min-max para cada coluna do seu dataset
+-- após fazer todas operações no dataset, executar 3 vezes um cross-validation de 5x, ou seja, 20%
+-- achar a média e desvio-padrão destas 3 vezes
+-- manter seu código organizado em funções e possivelmente em arquivos diferentes
+
